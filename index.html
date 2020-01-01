@@ -3,14 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1db272e893.js" crossorigin="anonymous"></script>
     <style>
       body {
-        background-color:black;
+        background: #111;
       }
+      .fa {
+        width: 100%;
+        font-size:40px;
+        background: #111;
+        margin: 0px;
+        padding-top: 10px;
+        color: white;
+      }
+      .fas {
+        width: 100%;
+        padding-top: 10px;
+        font-size: 40px;
+        color: white;
+        margin:0px;
+      }
+
       .top a {
         float:left;
         text-align:center;
-        background-color:black;
+        background: #111;
         color:white;
       }
       .leftSide {
@@ -25,8 +43,8 @@
       .leftSide a p {
         background: #222;
         color:white;
-        padding-top:30px;
-        padding-bottom:30px;
+        padding-top:10px;
+        padding-bottom:25px;
         margin:0px;
       }
       .leftSide img {
@@ -34,7 +52,10 @@
         margin:0px;
         opacity:0.7;
       }
-      #first{
+      .leftSide a {
+
+      }
+      #firsttext{
         background: #111;
       }
       .content {
@@ -54,15 +75,15 @@
       h4 {
         font-size:14px;
       }
-      .leftSide a p:hover {
-        background: #111;
+      .leftSide a :hover {
+          background: #111;
       }
       .top a:hover {
         background-color: white;
         opacity: 0.7;
         color:black;
       }
-      #first:hover {
+      #firsttext:hover {
         background-color: white;
         opacity: 0.7;
         color: black;
@@ -89,15 +110,19 @@
     <nav class="leftSide">
       <img src="images/LJS.jpg">
       <a>
-        <p id ="first">HOME</p>
+        <i class="fa fa-home"></i>
+        <p id ="firsttext">HOME</p>
       </a>
       <a>
+        <i class="fas fa-user"></i>
         <p>ABOUT</p>
       </a>
       <a>
+        <i class="fas fa-eye"></i>
         <p>PHOTOS</p>
       </a>
       <a>
+        <i class="fas fa-envelope"></i>
         <p>CONTACT</p>
       </a>
     </nav>
