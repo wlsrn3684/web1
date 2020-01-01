@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World!</title>
+    <style>
+      body {
+        background-color:black;
+      }
+      .top a {
+        float:left;
+        text-align:center;
+        background-color:black;
+        color:white;
+      }
+      .leftSide {
+        width:120px;
+        height:100%;
+        text-align:center;
+        background: #222;
+        position:fixed;
+        margin:0;
+        overflow:auto;
+      }
+      .leftSide a p {
+        background: #222;
+        color:white;
+        padding-top:30px;
+        padding-bottom:30px;
+        margin:0px;
+      }
+      .leftSide img {
+        width:100%;
+        margin:0px;
+        opacity:0.7;
+      }
+      #first{
+        background: #111;
+      }
+      .content {
+        margin-left:120px;
+        padding:24px;
+        text-align:center;
+      }
+      .content img {
+        width:100%;
+      }
+      h1, h4 {
+        color:white;
+      }
+      h1 {
+        font-size:50px;
+      }
+      h4 {
+        font-size:14px;
+      }
+      .leftSide a p:hover {
+        background: #111;
+      }
+      .top a:hover {
+        background-color: white;
+        opacity: 0.7;
+        color:black;
+      }
+      #first:hover {
+        background-color: white;
+        opacity: 0.7;
+        color: black;
+      }
+      @media(min-width:610px) {
+        .top a {
+          display:none;
+        }
+      }
+      @media(max-width:610px) {
+        .leftSide {
+          display:none;
+        }
+        .hideIam {
+          display:none;
+        }
+        .content {
+          margin-left:0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="leftSide">
+      <img src="images/LJS.jpg">
+      <a>
+        <p id ="first">HOME</p>
+      </a>
+      <a>
+        <p>ABOUT</p>
+      </a>
+      <a>
+        <p>PHOTOS</p>
+      </a>
+      <a>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+    <div class="top">
+      <a style="width:25%">HOME</a>
+      <a style="width:25%">ABOUT</a>
+      <a style="width:25%">PHOTOS</a>
+      <a style="width:25%">CONTACT</a>
+    </div>
+    <div class="content">
+      <h1>
+        <span class="hideIam">I'm</span>
+        Lee JaeSang.
+      </h1>
+      <h4>Photographer and Web Designer.</h4>
+      <img src="images/LJS.jpg">
+    </div>
+
+  </body>
+</html>
